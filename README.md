@@ -8,7 +8,7 @@ We thank the DeepSeek and SGLang teams for their outstanding work!
 
 We recommend using `uv` to manage the project environment.
 
-```
+```bash
 cd LatentSpec
 uv venv --python 3.12 --seed
 source .venv/bin/activate
@@ -50,7 +50,7 @@ bash DeepSpec/scripts/eval/eval.sh
 
 ## Speed Benchmark
 
-```
+```bash
 # Use the SGLang service launch script for each speculative decoding method in
 # sglang/latentspec_scripts, then benchmark all methods with the same
 # sglang/latentspec_scripts/run_tps.sh script.
@@ -60,5 +60,4 @@ export DRAFT_MODEL=...
 bash sglang/latentspec_scripts/run_sglang_latentspec.sh 
 # Run the benchmark
 bash sglang/latentspec_scripts/run_tps.sh
-
 ```
